@@ -62,6 +62,7 @@ header{
   top: 20%;
   left: 25%;
   width: 45%;
+  animation: left 2s ease-out;
 }
 .colored-text{
   color: var(--primary-color);
@@ -71,6 +72,7 @@ header{
   top: 11%;
   left: 13%;
   font-size: 300px;
+  animation: right 2s ease-out;
 }
 
 /* Socials  */
@@ -79,6 +81,7 @@ header{
   top: 85vh;
   left: 3% ; 
   display: flex;
+  animation: down 2s ease-out;
 }
 .social{
   padding: 0 20px;
@@ -94,4 +97,46 @@ header{
 }
 .insta:hover{
   color: rgb(255, 72, 246);
+}
+
+  /* Animations  */
+
+@keyframes right {
+  0%{
+    opacity: 0;
+    transform: translateX(-150px);
+  }  
+  80%{
+    transform: translateX(20px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes left {
+  0%{
+    opacity: 1;
+    transform: translateX(150px);
+  }  
+  80%{
+    transform: translateX(-20px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes down {
+  0%{
+    opacity: 0;
+    transform: translateY(-150px);
+  }  
+  80%{
+    transform: translateY(20px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
