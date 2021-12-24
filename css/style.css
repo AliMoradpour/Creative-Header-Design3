@@ -78,7 +78,7 @@ header{
 /* Socials  */
 .socials{
   position: absolute;
-  top: 85vh;
+  top: 83%;
   left: 3% ; 
   display: flex;
   animation: down 2s ease-out;
